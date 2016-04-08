@@ -1,15 +1,20 @@
 //U10416020 
+
 import java.util.*;
+
 public class BubbleSort{
+	//Data fields
 	int number;
 	int[] array = new int[number];
 	
+	//Constructor
 	BubbleSort(int newArray[]){
 		number = newArray.length;
 		array = newArray;		
 		setBubble();
 	}
 	
+	//Mutator method to do bubble sort
 	void setBubble(){
 		int swap;
 		for(int j=0;j<number;j++){
@@ -20,10 +25,10 @@ public class BubbleSort{
 					array[i+1] = swap;
 				}
 			}
-		}
-		
+		}		
 	}
 	
+	//Accessor method to return the result
 	int getBubble(int i){
 		return array[i];
 	}
